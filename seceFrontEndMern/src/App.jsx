@@ -6,6 +6,9 @@ import About from "./components/functionalComponents/About";
 import LearningReact from "./components/functionalComponents/LearningReact";
 import Contact from "./components/functionalComponents/Contact";
 import Login from "./components/functionalComponents/Login";
+import Signup from "./components/functionalComponents/Signup";
+import Props from "./components/functionalComponents/Props";
+import State from "./components/functionalComponents/State";
 import UseState from "./components/functionalComponents/Hooks/UseState";
 import UseEffect from "./components/functionalComponents/Hooks/UseEffect";
 import UseEffectAPI from "./components/functionalComponents/Hooks/UseEffectAPI";
@@ -30,6 +33,9 @@ function App() {
           <Route path="/learn-react" element={<LearningReact/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/props" element={<Props/>}/>
+          <Route path="/state" element={<State/>}/>
           <Route path="/use-state" element={<UseState/>}/>
           <Route path="/use-effect" element={<UseEffect/>}/>
           <Route path="/use-effect-api" element={<UseEffectAPI/>}/>

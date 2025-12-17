@@ -30,6 +30,16 @@ function Navbar() {
         {dropdown && (
           <ol className="dropdown-list">
             <li>
+              <Link to="/props" className="dropdown-link">
+                Props
+              </Link>
+            </li>
+            <li>
+              <Link to="/state" className="dropdown-link">
+                State
+              </Link>
+            </li>
+            <li>
               <Link to="/use-state" className="dropdown-link">
                 useState
               </Link>

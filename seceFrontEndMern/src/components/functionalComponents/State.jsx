@@ -1,12 +1,13 @@
-import {useState } from "react";
-const State=()=>{
-     let [state,updateState]=useState("State");
-     function setState(){
+import { useState } from "react";
+const State = () => {
+
+    const [state, updateState] = useState("state");
+    const setState = () => {
         updateState("State Updated");
-     }
+    }
     return(
-        <div >
-            <p>This is a {state} Component</p>
+        <div>
+            <p>This is {state} Component </p>
             <button onClick={setState}>Update</button>
         </div>
     )

@@ -1,16 +1,15 @@
-const Props=(Props)=>{
+const Props = (props) =>{
     return(
         <div>
-        <h1> This is Props Compoenet</h1>
-        <ol>
-            <li> Props are:</li>
-            <ul>
-                <li>{Props.hi}</li>
-                <li>Grade:{Props.grade}</li>
-                <li>Age:    {Props.age}</li>
-                <li><img src={Props.img} alt="Image"/></li>
-            </ul>
-        </ol>
+            <p>This is Props Component</p>
+            <ol>
+                <li>Props are:</li>
+                <ul>
+                    <li>{props.hi}</li>
+                    <li>I completed my {props.grade} grade by the age of {props.age}</li>
+                    <li><img src={props.img}></img></li>
+                </ul>
+            </ol>
         </div>
     )
 }
