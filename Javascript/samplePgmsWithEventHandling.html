@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    //Increment,Decrement and rest
+    <p id="num">0</p>
+<button id="inc">Increment</button>
+<button id="dec">Decrement</button>
+<button id="reset">Reset</button>
+<script>
+    var count=0
+    document.getElementById('inc').addEventListener('click',()=>{
+        count+=1
+        document.getElementById('num').innerText=count;
+    })
+    document.getElementById('dec').addEventListener('click',()=>{
+        count-=1
+        document.getElementById('num').innerText=count;
+    })
+    document.getElementById('reset').addEventListener('click',()=>{
+        count=0
+        document.getElementById('num').innerText=count;
+    })
+    </script>
+</body> -->
+<!-- <body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="getResult('rock')">Rock</button>
+    <button onclick="getResult('paper')">Paper</button>
+    <button onclick="getResult('scissor')">Scissor</button>
+    <p id="result"></p>
+    <script>
+        const getResult=(userChoice)=>{
+            var choice =['rock','paper','scissor'];
+            var computerChoice=choice[Math.floor(Math.random()*3)];
+            console.log(computerChoice);
+            var result="";
+            if(userChoice===computerChoice) {
+                result="Draw ";
+            }
+            else if((userChoice==="rock" && computerChoice==="paper") || 
+                    (userChoice==="paper" && computerChoice==="scissor") ||
+                    (userChoice==="scissor" && computerChoice==="rock")) {
+                result="Loss";
+            }
+            else {
+                result="Win";      
+            }
+            document.getElementById('result').innerText = `Computer chose ${computerChoice}. You ${result}!`;
+        }
+    </script>
+</body> -->
+
+<!--basic form creation-->
+<!-- <body>
+    <h1>Basic Details Form</h1>
+    <form id="userForm">
+        <label>Name:</label>
+        <input type="text" id="name" ><br><br>
+        
+        <label>Age:</label>
+        <input type="number" id="age" ><br><br>
+        
+        <label>Email:</label>
+        <input type="email" id="email"><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var email = document.getElementById('email').value;
+            
+            console.log('Name:', name);
+            console.log('Age:', age);
+            console.log('Email:', email);
+            
+            alert('Details submitted!');
+        });
+    </script>
+ 
+</body> -->
+<!-- <body>
+    <p id="title">Hello World!!</p>
+    <button id="toggle" onclick="toggle()">Toggle</button>
+    <script>
+        var toggle=() =>{
+            var color = ["red","blue","pink","green","orange","black","violet","yellow  "]
+            var ind=Math.floor(Math.random()*color.length)
+            document.querySelector('body').style.backgroundColor = color[ind]
+        }
+    </script>
+</body>  -->
+<!--
+<body>
+    <p id="title">Hello World</p>
+    <button id="toggle" onclick="buttonClicked()">toggle</button>
+    <script>
+        var buttonClicked=()=>{
+            var title=document.getElementById('title');
+            var result=title.innerText==="Hello World"?"Hello Keerthi":"Hello World";
+            title.innerText=result;
+        }
+    </script>
+</body>-->
+<body>
+    <p id="title">Hello World!!</p>
+    <button id="toggle" onclick="toggle()">Toggle</button>
+    <script>
+        var toggle=() =>{
+            var sizes = ["12px","18px","24px","30px","36px","42px","48px"]
+            var ind=Math.floor(Math.random()*sizes.length)
+            document.getElementById('title').style.fontSize = sizes[ind]
+        }
+    </script>
+</body>
+
+</html>

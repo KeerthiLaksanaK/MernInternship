@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id = "msg">Hello</p>
+    <p class ="item">One</p>
+    <p class ="item">Two</p> -->
+<!-- <div id="msg"></div> -->
+ <!-- <p id="msg"></p>
+ <button id="submit">Show Message</button> -->
+<!-- <ul id="list"></ul> -->
+<!-- <button id="submit" onclick="submitted()">Click</button> -->
+<!-- <p id="name"></p>
+<input type="text" id="inp" placeholder="Enter the name">
+<button id ="submit">submit</button> -->
+<p id="num">0</p>
+<button id="inc">Increment</button>
+<button id="dec">Decrement</button>
+<button id="reset">Reset</button>
+<script>
+    var count=0
+    document.getElementById('inc').addEventListener('click',()=>{
+        count+=1
+        document.getElementById('num').innerText=count;
+    })
+    document.getElementById('dec').addEventListener('click',()=>{
+        count-=1
+        document.getElementById('num').innerText=count;
+    })
+    document.getElementById('reset').addEventListener('click',()=>{
+        count=0
+        document.getElementById('num').innerText=count;
+    })
+    // document.getElementById("submit").addEventListener("click",()=>{
+    //     var text=document.getElementById("inp").value;
+    //     document.getElementById("name").innerText=text;
+    // })
+    // var submitted=()=>{
+    //     alert("Hi")
+    // }
+//    var li= document.createElement("li");
+//    li.innerText="One";
+//    document.getElementById("list").appendChild(li);
+        // document.getElementById("submit").addEventListener("click",()=>{
+        // document.getElementById("msg").innerText="Hello World!!"});
+    // document.getElementById('msg').innerHTML="<p>Hello</p>";
+        // document.getElementById('msg').style.color="Red";
+        // var item = document.getElementsByClassName('item');
+        // item[0].style.color="Green";
+        // //query selector
+        // document.querySelector('p').style.backgroundColor="blue";//id
+        // document.querySelector('.item').style.backgroundColor="pink";//class
+        // document.querySelector('#msg').style.backgroundColor="blue";//tag
+    </script>
+</body>
+</html>
