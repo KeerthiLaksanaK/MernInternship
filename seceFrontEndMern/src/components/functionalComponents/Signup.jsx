@@ -18,17 +18,25 @@ const Signup = () => {
         password,
       });
 
-      const { message, isSignup } = req.data;
-
-      if (isSignup) {
-        alert(message);
+      console.log("Backend response:", req.data);
+      
+      if (req.data && req.data.isSignup) {
+        alert(req.data.message || "Signup successful!");
         navigate("/login");
+      } else if (req.data && req.data.message) {
+        alert(req.data.message);
       } else {
-        alert(message || "Signup failed");
+        alert("Signup failed - Invalid response from server");
       }
     } catch (e) {
       console.error("Signup error:", e);
-      alert("Signup Failed: " + (e.response?.data?.message || e.message));
+      if (e.response) {
+        alert("Signup Failed: " + (e.response.data?.message || "Server error"));
+      } else if (e.request) {
+        alert("Signup Failed: Unable to connect to server");
+      } else {
+        alert("Signup Failed: " + e.message);
+      }
     }
   };
 
