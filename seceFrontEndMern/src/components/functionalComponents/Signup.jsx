@@ -12,7 +12,7 @@ const Signup = () => {
     event.preventDefault();
 
     try {
-      const req = await axios.post("https://merninternship-1-yl47.onrender.com/signup", {
+      const req = await axios.post("https://merninternship-vmxm.onrender.com/signup", {
         email,
         username,
         password,

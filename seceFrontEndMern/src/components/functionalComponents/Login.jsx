@@ -11,7 +11,7 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const req = await axios.post("https://merninternship-1-yl47.onrender.com/login", {
+      const req = await axios.post("https://merninternship-vmxm.onrender.com/login", {
         email,
         password,
       });
