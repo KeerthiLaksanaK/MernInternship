@@ -11,20 +11,30 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const req = await axios.post("https://merninternship-1-yl47.onrender.com/login", {
+      const req = await axios.post("http://localhost:8001/login", {
         email,
         password,
       });
 
+      console.log("Login response:", req.data);
       const { message, isLoggedIn } = req.data;
 
       if (isLoggedIn) {
         localStorage.setItem("isLogin", "true");
         alert(message);
         navigate("/");
+      } else {
+        alert(message || "Login failed");
       }
     } catch (e) {
-      alert("Login Failed",e);
+      console.error("Login error:", e);
+      if (e.response) {
+        alert("Login Failed: " + (e.response.data?.message || "Server error"));
+      } else if (e.request) {
+        alert("Login Failed: Unable to connect to server");
+      } else {
+        alert("Login Failed: " + e.message);
+      }
     }
   };
 
